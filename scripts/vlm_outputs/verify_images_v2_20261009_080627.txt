@@ -1,0 +1,14 @@
+CARD: Taj Mahal Palace Hotel | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of purple and grey colors with no photographic content.
+CARD: Marine Drive | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of teal and dark grey colors with no photographic content.
+CARD: Gateway of India | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of light green and dark grey colors with no photographic content.
+CARD: Mohammed Ali Road | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of beige and brown colors with no photographic content.
+CARD: Bandra West | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of light green and grey colors with no photographic content.
+CARD: Leopold Cafe | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of tan and dark grey colors with no photographic content.
+
+OVERALL_ALL_PHOTOS: NO
+SPECIFIC_GATEWAY_OF_INDIA_PHOTO: NO
+SPECIFIC_TAJ_MAHAL_PALACE_HOTEL_PHOTO: NO
+SPECIFIC_MARINE_DRIVE_PHOTO: NO
+RELEVANCE_GATEWAY_ARCH: NO
+RELEVANCE_HOTEL_INTERIOR_OR_EXTERIOR: NO
+RELEVANCE_SEASIDE_PROMENADE: NO

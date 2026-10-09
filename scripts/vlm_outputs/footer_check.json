@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"footer_column_count\": 3,\n  \"has_sheher_brand_column\": true,\n  \"has_cities_column\": true,\n  \"has_quick_tips_column\": true,\n  \"has_tech_stack_column\": false,\n  \"has_features_column\": false,\n  \"exactly_three_columns\": true,\n  \"visible_column_titles\": \"Sheher, Cities, Quick Tips\",\n  \"notes\": \"The footer correctly displays exactly three columns: Sheher, Cities, and Quick Tips, with the Tech Stack and Features columns removed.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791533091,
+  "id": "202610091604499b12345ca1c44fae",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610091604499b12345ca1c44fae",
+  "usage": {
+    "completion_tokens": 115,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1193,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1308
+  }
+}

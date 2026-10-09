@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "CARD: Taj Mahal Palace Hotel | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of the Taj Mahal Palace Hotel building with its red dome, featuring a person in the foreground.\nCARD: Marine Drive | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A nighttime photograph of a curved coastal road with streetlights reflecting on the water.\nCARD: Gateway of India | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of the stone arch monument of the Gateway of India.\nCARD: Mohammed Ali Road | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph showing old buildings and a busy street scene at night.\nCARD: Bandra West | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of a large mural or street art depicting a woman's face on a wall.\nCARD: Leopold Cafe | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of two men sitting in front of a purple background with \"Leopold Cafe & Bar\" text.\n\nCARD_COUNT_IS_SIX: YES\nALL_SIX_ARE_PHOTOGRAPHS: YES\nSPECIFIC_GATEWAY_OF_INDIA_IS_STONE_ARCH_MONUMENT: YES\nSPECIFIC_TAJ_MAHAL_PALACE_IS_LUXURY_HOTEL: YES\nSPECIFIC_MARINE_DRIVE_IS_SEASIDE_PROMENADE: YES\nLAYOUT_IS_CLEAN_AND_PROFESSIONAL: YES",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791533337,
+  "id": "20261009160849cb4de793003940e6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261009160849cb4de793003940e6",
+  "usage": {
+    "completion_tokens": 274,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5142,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5416
+  }
+}

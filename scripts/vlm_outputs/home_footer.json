@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"footer_column_count\": 4,\n  \"has_sheher_brand_column\": true,\n  \"has_cities_column\": true,\n  \"has_quick_tips_column\": false,\n  \"has_tech_stack_column\": true,\n  \"has_features_column\": true,\n  \"exactly_three_columns\": false,\n  \"visible_column_titles\": \"Sheher, Features, Tech Stack, Cities Covered\",\n  \"notes\": \"The footer contains four columns: Sheher, Features, Tech Stack, and Cities Covered, meaning the Tech Stack and Features columns were not removed as requested.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791532945,
+  "id": "20261009160220d5a001a0f1e94e15",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261009160220d5a001a0f1e94e15",
+  "usage": {
+    "completion_tokens": 123,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4708,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4831
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"real_photos\": false,\n  \"images_loading\": false,\n  \"observed_places\": \"Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe\",\n  \"observed_image_subjects\": \"purple gradient, green gradient, teal gradient, street food scene at night, mural of a woman's face, two men in a cafe or bar\",\n  \"any_gradient_or_broken\": true,\n  \"notes\": \"The first three cards in the grid use flat color gradients as image placeholders instead of real photographs.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791533089,
+  "id": "2026100916044370fa6b76999d4e98",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026100916044370fa6b76999d4e98",
+  "usage": {
+    "completion_tokens": 124,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4919,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5043
+  }
+}

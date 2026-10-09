@@ -1,0 +1,46 @@
+// Sheher (शहर) — Smart City Exploration Platform
+// Prisma schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model CitizenReport {
+  id          String   @id @default(cuid())
+  city        String
+  category    String // safety, traffic, weather, cleanliness, other
+  title       String
+  description String
+  lat         Float
+  lng         Float
+  severity    String // low, medium, high, critical
+  status      String  @default("pending") // pending, verified, resolved
+  upvotes     Int     @default(0)
+  imageUrl    String?
+  voiceNote   String? // base64 audio data
+  createdAt   DateTime @default(now())
+}
+
+model PlaceReview {
+  id        String   @id @default(cuid())
+  placeId   String
+  city      String
+  userName  String
+  rating    Int
+  comment   String
+  createdAt DateTime @default(now())
+}
+
+model ChatHistory {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String // user, assistant
+  content   String
+  city      String?
+  createdAt DateTime @default(now())
+}

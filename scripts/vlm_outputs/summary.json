@@ -1,0 +1,91 @@
+{
+  "explore_cards": {
+    "overall_ok": false,
+    "checks": [
+      {
+        "id": 1,
+        "label": "Place cards show REAL PHOTOGRAPHS (not gradients)",
+        "ok": false,
+        "detail": "The place cards use colored gradient placeholders instead of real photographs for all visible locations."
+      },
+      {
+        "id": 2,
+        "label": "Images are relevant to the places (Gateway / Marine Drive / hotels / food)",
+        "ok": false,
+        "detail": "purple gradient, greenish-grey gradient, light green gradient, brownish-yellow gradient, pale green gradient, beige-brown gradient"
+      },
+      {
+        "id": 3,
+        "label": "Card layout is clean (image / title / badge / desc / budget+safety)",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "id": 4,
+        "label": "Rating badge visible bottom-left of the image",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "id": 5,
+        "label": "Category icon (Compass / Utensils / Hotel) visible top-right",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "id": 6,
+        "label": "No broken / gradient images",
+        "ok": false,
+        "detail": "broken/gradient images detected"
+      }
+    ],
+    "vlm_raw": "{\n  \"real_photos\": false,\n  \"images_relevant\": false,\n  \"layout_clean\": true,\n  \"rating_badge_visible\": true,\n  \"category_icon_visible\": true,\n  \"any_image_broken_or_gradient\": true,\n  \"observed_places\": \"Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe\",\n  \"observed_image_subjects\": \"purple gradient, greenish-grey gradient, light green gradient, brownish-yellow gradient, pale green gradient, beige-brown gradient\",\n  \"notes\": \"The place cards use colored gradient placeholders instead of real photographs for all visible locations.\"\n}",
+    "parsed": {
+      "real_photos": false,
+      "images_relevant": false,
+      "layout_clean": true,
+      "rating_badge_visible": true,
+      "category_icon_visible": true,
+      "any_image_broken_or_gradient": true,
+      "observed_places": "Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe",
+      "observed_image_subjects": "purple gradient, greenish-grey gradient, light green gradient, brownish-yellow gradient, pale green gradient, beige-brown gradient",
+      "notes": "The place cards use colored gradient placeholders instead of real photographs for all visible locations."
+    }
+  },
+  "home_footer": {
+    "overall_ok": false,
+    "checks": [
+      {
+        "id": 7,
+        "label": "Footer shows exactly 3 columns (Sheher brand, Cities, Quick Tips)",
+        "ok": false,
+        "detail": "count=4, titles=[Sheher, Features, Tech Stack, Cities Covered]"
+      },
+      {
+        "id": 8,
+        "label": "'Tech Stack' column removed",
+        "ok": false,
+        "detail": "still present"
+      },
+      {
+        "id": 9,
+        "label": "'Features' column removed",
+        "ok": false,
+        "detail": "still present"
+      }
+    ],
+    "vlm_raw": "{\n  \"footer_column_count\": 4,\n  \"has_sheher_brand_column\": true,\n  \"has_cities_column\": true,\n  \"has_quick_tips_column\": false,\n  \"has_tech_stack_column\": true,\n  \"has_features_column\": true,\n  \"exactly_three_columns\": false,\n  \"visible_column_titles\": \"Sheher, Features, Tech Stack, Cities Covered\",\n  \"notes\": \"The footer contains four columns: Sheher, Features, Tech Stack, and Cities Covered, meaning the Tech Stack and Features columns were not removed as requested.\"\n}",
+    "parsed": {
+      "footer_column_count": 4,
+      "has_sheher_brand_column": true,
+      "has_cities_column": true,
+      "has_quick_tips_column": false,
+      "has_tech_stack_column": true,
+      "has_features_column": true,
+      "exactly_three_columns": false,
+      "visible_column_titles": "Sheher, Features, Tech Stack, Cities Covered",
+      "notes": "The footer contains four columns: Sheher, Features, Tech Stack, and Cities Covered, meaning the Tech Stack and Features columns were not removed as requested."
+    }
+  },
+  "overall_ok": false
+}

@@ -1,0 +1,233 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-jakarta);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  /* Sheher (शहर) brand: warm sand + sunset orange + heritage terracotta */
+  --background: oklch(0.98 0.008 70);
+  --foreground: oklch(0.21 0.012 40);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.012 40);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.012 40);
+  --primary: oklch(0.55 0.18 35);
+  --primary-foreground: oklch(0.99 0.005 70);
+  --secondary: oklch(0.95 0.018 70);
+  --secondary-foreground: oklch(0.21 0.012 40);
+  --muted: oklch(0.96 0.01 70);
+  --muted-foreground: oklch(0.50 0.014 50);
+  --accent: oklch(0.93 0.04 50);
+  --accent-foreground: oklch(0.30 0.08 35);
+  --destructive: oklch(0.58 0.22 27);
+  --border: oklch(0.90 0.012 70);
+  --input: oklch(0.92 0.012 70);
+  --ring: oklch(0.55 0.18 35);
+  --chart-1: oklch(0.55 0.18 35);
+  --chart-2: oklch(0.65 0.16 160);
+  --chart-3: oklch(0.50 0.15 250);
+  --chart-4: oklch(0.75 0.18 85);
+  --chart-5: oklch(0.60 0.22 320);
+  --sidebar: oklch(0.985 0.005 70);
+  --sidebar-foreground: oklch(0.21 0.012 40);
+  --sidebar-primary: oklch(0.55 0.18 35);
+  --sidebar-primary-foreground: oklch(0.99 0.005 70);
+  --sidebar-accent: oklch(0.95 0.018 70);
+  --sidebar-accent-foreground: oklch(0.21 0.012 40);
+  --sidebar-border: oklch(0.90 0.012 70);
+  --sidebar-ring: oklch(0.55 0.18 35);
+}
+
+.dark {
+  --background: oklch(0.16 0.014 50);
+  --foreground: oklch(0.96 0.008 70);
+  --card: oklch(0.21 0.014 50);
+  --card-foreground: oklch(0.96 0.008 70);
+  --popover: oklch(0.21 0.014 50);
+  --popover-foreground: oklch(0.96 0.008 70);
+  --primary: oklch(0.70 0.18 35);
+  --primary-foreground: oklch(0.16 0.014 50);
+  --secondary: oklch(0.27 0.014 50);
+  --secondary-foreground: oklch(0.96 0.008 70);
+  --muted: oklch(0.27 0.014 50);
+  --muted-foreground: oklch(0.72 0.012 70);
+  --accent: oklch(0.32 0.05 35);
+  --accent-foreground: oklch(0.95 0.012 70);
+  --destructive: oklch(0.68 0.20 25);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.70 0.18 35);
+  --chart-1: oklch(0.70 0.18 35);
+  --chart-2: oklch(0.70 0.16 160);
+  --chart-3: oklch(0.65 0.16 250);
+  --chart-4: oklch(0.78 0.18 85);
+  --chart-5: oklch(0.65 0.22 320);
+  --sidebar: oklch(0.18 0.014 50);
+  --sidebar-foreground: oklch(0.96 0.008 70);
+  --sidebar-primary: oklch(0.70 0.18 35);
+  --sidebar-primary-foreground: oklch(0.16 0.014 50);
+  --sidebar-accent: oklch(0.27 0.014 50);
+  --sidebar-accent-foreground: oklch(0.96 0.008 70);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.70 0.18 35);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  opacity: 0.4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Leaflet customizations */
+.leaflet-container {
+  font-family: var(--font-sans) !important;
+  background: oklch(0.94 0.012 70) !important;
+}
+.dark .leaflet-container {
+  background: oklch(0.20 0.014 50) !important;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px -8px rgba(0,0,0,0.2) !important;
+}
+.leaflet-popup-content {
+  margin: 12px 16px !important;
+  font-family: var(--font-sans) !important;
+}
+.dark .leaflet-popup-content-wrapper,
+.dark .leaflet-popup-tip {
+  background: oklch(0.21 0.014 50) !important;
+  color: oklch(0.96 0.008 70) !important;
+}
+
+/* Custom marker pulse */
+@keyframes markerPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.85; }
+}
+.marker-pulse {
+  animation: markerPulse 2s ease-in-out infinite;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(251, 146, 60, 0.18), transparent 60%),
+    radial-gradient(ellipse 60% 80% at 90% 100%, rgba(190, 24, 93, 0.12), transparent 60%),
+    radial-gradient(ellipse 100% 60% at 50% 50%, rgba(245, 158, 11, 0.08), transparent 70%);
+}
+
+.dark .hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(251, 146, 60, 0.20), transparent 60%),
+    radial-gradient(ellipse 60% 80% at 90% 100%, rgba(190, 24, 93, 0.18), transparent 60%),
+    radial-gradient(ellipse 100% 60% at 50% 50%, rgba(245, 158, 11, 0.10), transparent 70%);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.dark .glass-card {
+  background: rgba(33, 33, 50, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Smooth fade */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, oklch(0.65 0.20 35), oklch(0.55 0.22 320));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Map marker custom icon */
+.sheher-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Skeleton shimmer */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(90deg, var(--muted) 0%, var(--secondary) 50%, var(--muted) 100%);
+  background-size: 1000px 100%;
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "CARD: Taj Mahal Palace Hotel | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of purple and grey colors with no photographic content.\nCARD: Marine Drive | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of teal and dark grey colors with no photographic content.\nCARD: Gateway of India | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of light green and dark grey colors with no photographic content.\nCARD: Mohammed Ali Road | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of beige and brown colors with no photographic content.\nCARD: Bandra West | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of light green and grey colors with no photographic content.\nCARD: Leopold Cafe | IMAGE_TYPE: GRADIENT | RELEVANT: NO | DESCRIPTION: The image is a smooth, flat gradient of tan and dark grey colors with no photographic content.\n\nOVERALL_ALL_PHOTOS: NO\nSPECIFIC_GATEWAY_OF_INDIA_PHOTO: NO\nSPECIFIC_TAJ_MAHAL_PALACE_HOTEL_PHOTO: NO\nSPECIFIC_MARINE_DRIVE_PHOTO: NO\nRELEVANCE_GATEWAY_ARCH: NO\nRELEVANCE_HOTEL_INTERIOR_OR_EXTERIOR: NO\nRELEVANCE_SEASIDE_PROMENADE: NO",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791533196,
+  "id": "2026100916062780a483277a5f4a48",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026100916062780a483277a5f4a48",
+  "usage": {
+    "completion_tokens": 321,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4925,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5246
+  }
+}

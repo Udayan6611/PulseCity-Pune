@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"real_photos\": false,\n  \"images_relevant\": false,\n  \"layout_clean\": true,\n  \"rating_badge_visible\": true,\n  \"category_icon_visible\": true,\n  \"any_image_broken_or_gradient\": true,\n  \"observed_places\": \"Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe\",\n  \"observed_image_subjects\": \"purple gradient, greenish-grey gradient, light green gradient, brownish-yellow gradient, pale green gradient, beige-brown gradient\",\n  \"notes\": \"The place cards use colored gradient placeholders instead of real photographs for all visible locations.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791532940,
+  "id": "202610091602145bea7f46e152459b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610091602145bea7f46e152459b",
+  "usage": {
+    "completion_tokens": 143,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5059,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5202
+  }
+}

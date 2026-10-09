@@ -1,0 +1,64 @@
+{
+  "explore": {
+    "overall_ok": false,
+    "checks": [
+      {
+        "id": 1,
+        "label": "Place cards show REAL PHOTOGRAPHS (not gradients)",
+        "ok": false,
+        "detail": "purple gradient, green gradient, teal gradient, street food scene at night, mural of a woman's face, two men in a cafe or bar"
+      },
+      {
+        "id": 2,
+        "label": "All card images load correctly (none broken/missing)",
+        "ok": false,
+        "detail": "broken/gradient flagged"
+      }
+    ],
+    "vlm_raw": "{\n  \"real_photos\": false,\n  \"images_loading\": false,\n  \"observed_places\": \"Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe\",\n  \"observed_image_subjects\": \"purple gradient, green gradient, teal gradient, street food scene at night, mural of a woman's face, two men in a cafe or bar\",\n  \"any_gradient_or_broken\": true,\n  \"notes\": \"The first three cards in the grid use flat color gradients as image placeholders instead of real photographs.\"\n}",
+    "parsed": {
+      "real_photos": false,
+      "images_loading": false,
+      "observed_places": "Taj Mahal Palace Hotel, Marine Drive, Gateway of India, Mohammed Ali Road, Bandra West, Leopold Cafe",
+      "observed_image_subjects": "purple gradient, green gradient, teal gradient, street food scene at night, mural of a woman's face, two men in a cafe or bar",
+      "any_gradient_or_broken": true,
+      "notes": "The first three cards in the grid use flat color gradients as image placeholders instead of real photographs."
+    }
+  },
+  "footer": {
+    "overall_ok": true,
+    "checks": [
+      {
+        "id": 3,
+        "label": "Footer shows exactly 3 columns (Sheher brand, Cities, Quick Tips)",
+        "ok": true,
+        "detail": "count=3, titles=[Sheher, Cities, Quick Tips]"
+      },
+      {
+        "id": 4,
+        "label": "'Tech Stack' column removed from footer",
+        "ok": true,
+        "detail": "removed"
+      },
+      {
+        "id": 5,
+        "label": "'Features' column removed from footer",
+        "ok": true,
+        "detail": "removed"
+      }
+    ],
+    "vlm_raw": "{\n  \"footer_column_count\": 3,\n  \"has_sheher_brand_column\": true,\n  \"has_cities_column\": true,\n  \"has_quick_tips_column\": true,\n  \"has_tech_stack_column\": false,\n  \"has_features_column\": false,\n  \"exactly_three_columns\": true,\n  \"visible_column_titles\": \"Sheher, Cities, Quick Tips\",\n  \"notes\": \"The footer correctly displays exactly three columns: Sheher, Cities, and Quick Tips, with the Tech Stack and Features columns removed.\"\n}",
+    "parsed": {
+      "footer_column_count": 3,
+      "has_sheher_brand_column": true,
+      "has_cities_column": true,
+      "has_quick_tips_column": true,
+      "has_tech_stack_column": false,
+      "has_features_column": false,
+      "exactly_three_columns": true,
+      "visible_column_titles": "Sheher, Cities, Quick Tips",
+      "notes": "The footer correctly displays exactly three columns: Sheher, Cities, and Quick Tips, with the Tech Stack and Features columns removed."
+    }
+  },
+  "overall_ok": false
+}

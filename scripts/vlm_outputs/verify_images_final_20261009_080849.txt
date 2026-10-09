@@ -1,0 +1,13 @@
+CARD: Taj Mahal Palace Hotel | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of the Taj Mahal Palace Hotel building with its red dome, featuring a person in the foreground.
+CARD: Marine Drive | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A nighttime photograph of a curved coastal road with streetlights reflecting on the water.
+CARD: Gateway of India | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of the stone arch monument of the Gateway of India.
+CARD: Mohammed Ali Road | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph showing old buildings and a busy street scene at night.
+CARD: Bandra West | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of a large mural or street art depicting a woman's face on a wall.
+CARD: Leopold Cafe | IMAGE_TYPE: PHOTOGRAPH | DESCRIPTION: A photograph of two men sitting in front of a purple background with "Leopold Cafe & Bar" text.
+
+CARD_COUNT_IS_SIX: YES
+ALL_SIX_ARE_PHOTOGRAPHS: YES
+SPECIFIC_GATEWAY_OF_INDIA_IS_STONE_ARCH_MONUMENT: YES
+SPECIFIC_TAJ_MAHAL_PALACE_IS_LUXURY_HOTEL: YES
+SPECIFIC_MARINE_DRIVE_IS_SEASIDE_PROMENADE: YES
+LAYOUT_IS_CLEAN_AND_PROFESSIONAL: YES
